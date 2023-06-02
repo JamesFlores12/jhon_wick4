@@ -4,8 +4,11 @@ import PosterCard from '../components/SeccionMovie'
 import SeccionMovie from '../components/SeccionMovie'
 import { NavBar } from '../components/NavBar'
 import { useEffect, useState } from "react";
+import Seccionmov from '../components/Seccionmov'
 
 const Home = () => {
+  /*const[CommingSoonMovie,setCommimgSoonMovie]=useState([]);
+  axios=await.CommingSoonMovie.get('https://api.themoviedb.org/3/movie/now_playing?api_key=')*/
 
   // const [dogs, setDogs] = useState("");
   // // console.log(dogs);
@@ -15,13 +18,13 @@ const Home = () => {
   //     .then((data) => setDogs(data));
   // }, []);
 
-  const [posters, setPosters] = useState([])
+  /*const [posters, setPosters] = useState([])
   console.log(posters)
   useEffect(() => {
-    fetch("https://api.themoviedb.org/3/trending/all/week?api_key=77e8c4b872c1f73d67d98342f765eabb")
+    fetch("")
     .then((response) => response.json())
     .then((data) => setPosters(data));
-  }, [])
+  }, [])*/
 
 
 
@@ -31,9 +34,11 @@ const Home = () => {
 
       {/* <SeccionMovie poster = {posters}/> */}
       <SeccionMovie title={"New Movies"}/>
-      <SeccionMovie title={"Comming Soon"}/>
+      <Seccionmov title={"Comming Soon"}/>
+     
       <SeccionMovie title={"Top Movie"}/>
       <SeccionMovie title={"Accion Movie"}/>
+     
 
 
       <NavBar/>

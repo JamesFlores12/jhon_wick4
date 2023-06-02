@@ -1,7 +1,7 @@
 import React from 'react'
 import './SeccionMovie.css'
 import { MovieCard } from './MovieCard'
-const SeccionMovie = ({poster, title}) => {
+const Seccion = ({poster, title}) => {
   
   return (
     <div className="seccion-container">
@@ -16,10 +16,10 @@ const SeccionMovie = ({poster, title}) => {
         } */}
 
         {/* <MovieCard poster={poster} key={poster.id}/> */}
-          <MovieCard image={"public/static/image/1.jpg"}/>
-          <MovieCard image={"public/static/image/2.jpg"}/>
-          <MovieCard image={"public/static/image/3.jpg"}/>
-          <MovieCard image={"public/static/image/4.jpg"}/>
+          <MovieCard image={"public/static/image/9.jpg"}/>
+          <MovieCard image={"public/static/image/10.jpg"}/>
+          <MovieCard image={"public/static/image/11.jpg"}/>
+          <MovieCard image={"public/static/image/12.jpg"}/>
 
         
 
@@ -34,4 +34,4 @@ const SeccionMovie = ({poster, title}) => {
   )
 }
 
-export default SeccionMovie
+export default Seccion
